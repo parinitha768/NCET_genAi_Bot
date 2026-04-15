@@ -3,7 +3,7 @@ from groq import Groq
 st.set_page_config("PragyanAI Content Generator",layout="wide")
 st.title("Tom and jerry")
 st.image("images.png")
-client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+client = Groq(api_key=st.secrets["GEN_API_K"])
 product = st.text_input("Product")
 audience = st.text_input("Audience")
 if st.button("Generate Content"):
